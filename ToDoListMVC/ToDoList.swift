@@ -28,8 +28,6 @@ class ToDoList: UIViewController, AddTask{
         tableView.reloadData()
     }
     
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! AddController
         vc.delegate = self
@@ -44,11 +42,15 @@ func createArray() -> [Task] {
     let task2 = Task(checkBoxChecked: false, name: "proba task 2")
     let task3 = Task(checkBoxChecked: false, name: "proba task 3")
     let task4 = Task(checkBoxChecked: false, name: "proba task 4")
+    let task5 = Task(checkBoxChecked: false, name: "proba task 5")
+    let task6 = Task(checkBoxChecked: false, name: "proba task 6")
     
     tempToDoList.append(task1)
     tempToDoList.append(task2)
     tempToDoList.append(task3)
     tempToDoList.append(task4)
+    tempToDoList.append(task5)
+    tempToDoList.append(task6)
     
     return tempToDoList
 }
